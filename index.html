@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bai tap JS-1</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="w-50 border border-primary my-5">
+            <form>
+                <h3 class="text-center text-primary p-3">CHƯƠNG TRÌNH QUY ĐỔI USD</h3>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="usd" placeholder="Nhập số USD ">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button onclick="qrtUsd()" type="button" class="btn btn-primary" id="btnCalc">Tính nào</button>
+                    </div>
+                </div>
+                <div class="bg-primary bg1  m-0 mt-3 d-flex py-1">
+                    <p class="h-50 py-2 pl-1 text-white">Số USD quy đổi là: </p>
+                    <p class="h-50 w-50 mx-auto py-2" id="txtcontent1"></p>
+                </div>
+                
+
+            </form>
+        </div>
+        <div class="w-50 border border- border-success my-5">
+            <form class="">
+                <h3 class="text-center text-success p-3">CHƯƠNG TRÌNH TÍNH CHU VI VÀ DIỆN TÍCH HÌNH CHỮ NHẬT</h3>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="chieuD" placeholder="Nhập chiều dài ">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="chieuR" placeholder="Nhập chiều rộng ">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button onclick= "tinhDtCv()" type="button" class="btn btn-success" id="btnCalc" >Math</button>
+                    </div>
+                </div>
+                <div class="bg-success bg2  m-0 mt-3 py-1">
+                    <div class="d-flex ml-1 mb-1">
+                        <p class="h-50 text-white">Diện Tích hình chữ nhật là : </p>
+                        <p class="h-50 w-50 mx-auto" id="txtcontent2"></p>
+                    </div>
+                    <div class="d-flex ml-1">
+                        <p class="h-50 text-white">Chu Vi hình chữ nhật là : </p>
+                        <p class="h-50 w-50 mx-auto pl-2" id="txtcontent22"></p>
+                    </div>
+                    
+                </div>
+                
+
+            </form>
+        </div>
+        <div class="w-50 border border-danger my-5">
+            <form>
+                <h3 class="text-center text-danger p-3">CHƯƠNG TRÌNH TÍNH TỔNG CỦA HAI KÝ SỐ</h3>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="inpNum" placeholder="Nhập số ">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button onclick="tinhTongNum()" type="button" class="btn btn-danger" id="btnCalc">Tính nào</button>
+                    </div>
+                </div>
+                <div class="bg-danger bg1  m-0 mt-3 d-flex mt-3 py-1">
+                    <p class="h-50 py-2 pl-1 text-white">Tổng của 2 Ký số là :</p>
+                    <p class="h-50 w-50 mx-auto py-2" id="txtcontent3"></p>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- BS4  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!-- Main JS  -->
+    <!-- bai 1  -->
+    <script src="./js/baitap1.js"></script>
+    <!-- bai 2  -->
+    <script src="./js/baitap2.js"></script>
+    <!-- bai 3  -->
+    <script src="./js/baitap3.js"></script>
 </body>
+
 </html>
