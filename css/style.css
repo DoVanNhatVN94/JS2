@@ -18,3 +18,32 @@ button {
 button:hover {
   box-shadow: 5px 5px 5px #8a8989;
 }
+.b1{
+  background-image:linear-gradient(
+    to left,
+    white,
+    rgba(109, 109, 241, 0.349),
+    rgba(115, 115, 245, 0.267)
+  );
+}
+.b2{
+  background-image:linear-gradient(
+    to right,
+    white,
+    rgba(109, 241, 175, 0.349),
+    rgba(115, 245, 154, 0.267)
+  );
+}
+.b3{
+  background-image:linear-gradient(
+    to left,
+    white,
+    rgba(241, 109, 138, 0.349),
+    rgba(245, 115, 121, 0.267)
+  );
+}
+
+input:hover{
+  box-shadow: 5px 5px 5px #8a8989;
+  cursor: pointer;
+}
